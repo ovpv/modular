@@ -1,5 +1,77 @@
 # modular-scripts
 
+## 5.1.1
+
+### Patch Changes
+
+- [#2470](https://github.com/jpmorganchase/modular/pull/2470)
+  [`a4fb17ae`](https://github.com/jpmorganchase/modular/commit/a4fb17ae4dadc89a241dc9fb56c0aff7e2db5003)
+  Thanks [@ImmanuelBaskaran](https://github.com/ImmanuelBaskaran)! - Add modular
+  directory to targetLocations checked by typecheck
+
+## 5.1.0
+
+### Minor Changes
+
+- [#2433](https://github.com/jpmorganchase/modular/pull/2433)
+  [`757217d`](https://github.com/jpmorganchase/modular/commit/757217d6ed5362c077b3b524e4374fd68ce14ef6)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Use of swc Jest for
+  testing can now be configured through modular configuration file
+
+## 5.0.1
+
+### Patch Changes
+
+- [#2427](https://github.com/jpmorganchase/modular/pull/2427)
+  [`f1a1e0a`](https://github.com/jpmorganchase/modular/commit/f1a1e0ae0d318d8de92a0fdff745ca19b5b3d9fc)
+  Thanks [@benpryke](https://github.com/benpryke)! - Allow assets served locally
+  via `modular serve` to be loaded cross-domain via the cors plugin
+
+## 5.0.0
+
+### Major Changes
+
+- [#2391](https://github.com/jpmorganchase/modular/pull/2391)
+  [`6209e17`](https://github.com/jpmorganchase/modular/commit/6209e17bbe90eaa0296c291ba26eafebf8a6591f)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Modular's workspace
+  resolver now ignores a workspace if covered by a .modularignore or .gitignore
+  (.modularignore overrides .gitignore)
+
+- [#2384](https://github.com/jpmorganchase/modular/pull/2384)
+  [`1e9c8cb`](https://github.com/jpmorganchase/modular/commit/1e9c8cb09c523169d196116c5335c04ec6fe9fac)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Standardized lint
+  and typecheck commands to bring them in line with other modular selective
+  behaviour. Now lints and typechecks non-modular packages by default
+
+- [#2370](https://github.com/jpmorganchase/modular/pull/2370)
+  [`ef63eb3`](https://github.com/jpmorganchase/modular/commit/ef63eb3982e5984f72b7ea326a8c1da034c83253)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Dropped Node 14
+  support, added Node 20 support. Changed target to ES2017
+
+### Patch Changes
+
+- Updated dependencies
+  [[`6209e17`](https://github.com/jpmorganchase/modular/commit/6209e17bbe90eaa0296c291ba26eafebf8a6591f)]:
+  - @modular-scripts/workspace-resolver@2.0.0
+
+## 4.4.2
+
+### Patch Changes
+
+- [#2393](https://github.com/jpmorganchase/modular/pull/2393)
+  [`e4f583f`](https://github.com/jpmorganchase/modular/commit/e4f583fbe1e30212d88d2b51b5ab0dd549a77e6d)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Fix --bypass flag
+  in test command
+
+## 4.4.1
+
+### Patch Changes
+
+- [#2385](https://github.com/jpmorganchase/modular/pull/2385)
+  [`5ba67bf`](https://github.com/jpmorganchase/modular/commit/5ba67bf81e737bae49c6aa9ee46c36b8986f6127)
+  Thanks [@AlbertoBrusa](https://github.com/AlbertoBrusa)! - Fix esm-views not
+  starting
+
 ## 4.4.0
 
 ### Minor Changes

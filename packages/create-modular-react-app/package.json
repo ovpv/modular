@@ -1,6 +1,6 @@
 {
   "name": "create-modular-react-app",
-  "version": "5.1.0",
+  "version": "6.0.0",
   "license": "Apache-2.0",
   "bin": {
     "create-modular-react-app": "build/cli.js"
@@ -11,7 +11,7 @@
     "./package.json": "./package.json"
   },
   "engines": {
-    "node": "^14.18.0 || >=16.10.0 || >=18.0.0"
+    "node": ">=16.10.0 || >=18.0.0 || >=20.0.0"
   },
   "scripts": {
     "create-modular-react-app": "ts-node src/cli.ts",

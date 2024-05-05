@@ -1,15 +1,15 @@
 {
   "name": "@modular-scripts/workspace-resolver",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "license": "Apache-2.0",
   "main": "src/index.ts",
   "dependencies": {
+    "@esm2cjs/globby": "13.1.4",
     "fs-extra": "^10.1.0",
-    "globby": "11.1.0",
     "semver": "7.3.7"
   },
   "devDependencies": {
-    "@modular-scripts/modular-types": "1.2.0",
+    "@modular-scripts/modular-types": "1.2.1",
     "@types/fs-extra": "^9.0.13"
   },
   "scripts": {

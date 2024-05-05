@@ -40,6 +40,7 @@ module.exports = {
   externalAllowList: ['**'],
   publicUrl: '',
   generateSourceMap: true,
+  swcJest: false,
 };
 ```
 
@@ -69,8 +70,8 @@ esm.sh. Only applies to ESM Views.
 Packages that should be bundled and not fetched from a CDN. We recommend
 allowing all packages to be handled by the CDN, except for particular cases
 where they would not work correctly. See
-[known-limitations](./esm-views/known-limitations.md). Defaults to none. Only
-applies to ESM Views.
+[customize bundle strategy](./esm-views/customize-bundle-strategy.md). Defaults
+to none. Only applies to ESM Views.
 
 ### externalAllowList
 
@@ -80,8 +81,8 @@ applies to ESM Views.
 
 Packages that should be fetched from a CDN. We recommend allowing all packages
 to be handled by the CDN, except for particular cases where they would not work
-correctly. See [known-limitations](./esm-views/known-limitations.md). Defaults
-to all packages. Only applies to ESM Views.
+correctly. See [Developing with ESM Views](./esm-views/developing-esm.md).
+Defaults to all packages. Only applies to ESM Views.
 
 ### publicUrl
 
@@ -103,6 +104,16 @@ Should build process generate a source map - can be disabled for performance
 reasons. Source maps are resource heavy and can cause out of memory issue for
 large source files.
 
+### swcJest
+
+**Type**: `boolean`
+
+**Default**: `false`
+
+Use Rust based SWC Jest runner instead of ts-jest & babel for performance
+improvements. Can be breaking for certain tests and configurations. Cannot be
+configured per package, must be configured at root.
+
 ## `package.json#modular`
 
 _NOTE: This property is created automatically and is described here for
@@ -121,3 +132,9 @@ _e.g._
 The `package.json#modular.type` can be `"root"`, `"app"`, `"view"`,
 `"esm-view"`, `"source"`, `"template"` or `"package"`. Read more about Modular
 types in [this explainer](/docs/package-types).
+
+## `.modularignore` & `.gitignore`
+
+Modular respects `.gitignore` when identifying workspaces in the repository,
+ignoring any workspaces covered by the repo's `.gitignore`. This behavior can be
+overridden by providing a `.modularignore`.
